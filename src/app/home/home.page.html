@@ -1,14 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Mapas do Vini =)
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+      <ion-card (click)="onMap1Click()">
+          <ion-card-header>
+            <ion-card-title>Mapa 1</ion-card-title>
+            <ion-card-subtitle>Mapa marcado na minha casa</ion-card-subtitle>
+          </ion-card-header>
+      </ion-card>
+
+      <ion-card (click)="onMap2Click()">
+          <ion-card-header>
+            <ion-card-title>Mapa 2</ion-card-title>
+            <ion-card-subtitle>Mapa marcado na minha localização atual</ion-card-subtitle>
+          </ion-card-header>
+      </ion-card>
+
+      <ion-card (click)="onMap3Click()">
+          <ion-card-header>
+            <ion-card-title>Mapa 3</ion-card-title>
+            <ion-card-subtitle>Mapa com sistemas de rotas</ion-card-subtitle>
+          </ion-card-header>
+      </ion-card>
   </div>
 </ion-content>
